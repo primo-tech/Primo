@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const { prefix, token } = require('./config.json');
+const prefix = "&";
 const client = new Discord.Client();
 
 const brain = require('brain.js');
@@ -61,5 +61,5 @@ client.on('message', message =>
 	});
 });
 
-client.login(token);
+client.login(process.env.BOT_TOKEN);
 
